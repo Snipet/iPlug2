@@ -91,6 +91,7 @@ void IPlugChunks::ProcessBlock(sample** inputs, sample** outputs, int nFrames)
 void IPlugChunks::OnUIOpen()
 {
   UpdateUIControls();
+  SendCurrentParamValuesFromDelegate();
 }
 
 void IPlugChunks::UpdateUIControls()
